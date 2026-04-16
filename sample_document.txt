@@ -1,0 +1,44 @@
+Artificial Intelligence in Healthcare: An Overview
+
+Introduction
+------------
+Artificial Intelligence (AI) refers to the simulation of human intelligence processes by computer systems. These processes include learning, reasoning, and self-correction. In healthcare, AI is transforming how diseases are diagnosed, treatments are planned, and patient outcomes are predicted.
+
+Key Applications
+----------------
+
+1. Medical Imaging and Diagnosis
+AI-powered image recognition tools can analyse X-rays, MRI scans, and CT scans with high accuracy. Studies have shown that AI models can detect conditions such as pneumonia, diabetic retinopathy, and certain cancers at rates comparable to or exceeding experienced radiologists.
+
+2. Drug Discovery
+Machine learning algorithms can sift through millions of chemical compounds to predict which ones might be effective drugs. Companies like DeepMind have used AI to predict protein structures (AlphaFold), dramatically accelerating drug development timelines.
+
+3. Predictive Analytics
+Hospitals use AI to predict patient deterioration, readmission risk, and length of stay. Early warning systems flag high-risk patients before crises occur, improving outcomes and reducing costs.
+
+4. Natural Language Processing (NLP)
+NLP enables AI to read and understand medical literature, patient notes, and clinical records. Automated summarisation and information extraction help physicians save time on documentation.
+
+5. Robotic Surgery
+AI-guided robots assist surgeons in performing precise operations. Systems like the da Vinci Surgical Robot allow minimally invasive procedures with enhanced dexterity.
+
+Challenges and Limitations
+---------------------------
+
+Data Privacy: Medical data is highly sensitive. Regulations like HIPAA (USA) and GDPR (Europe) govern how patient data can be used for AI training.
+
+Bias and Fairness: AI models trained on non-representative datasets can produce biased outputs, potentially exacerbating health disparities.
+
+Interpretability: Many deep learning models are "black boxes," making it difficult for clinicians to understand or trust their recommendations.
+
+Regulatory Approval: AI medical devices require approval from bodies like the FDA before clinical use, which can slow adoption.
+
+Future Outlook
+--------------
+The global AI in healthcare market is projected to reach USD 188 billion by 2030. Key growth drivers include increased electronic health record adoption, advances in genomics, and the integration of wearable devices.
+
+AI will not replace doctors but will serve as a powerful decision-support tool, augmenting clinical expertise with data-driven insights.
+
+Conclusion
+----------
+AI represents one of the most transformative forces in modern medicine. When developed responsibly and deployed ethically, it has the potential to save millions of lives, reduce costs, and personalise care at an unprecedented scale.
