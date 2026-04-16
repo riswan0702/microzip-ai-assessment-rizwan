@@ -1,4 +1,3 @@
-
 # microzip-ai-assessment-rizwan
 
 > **MicroZip IT Solutions — AI/ML Engineer Technical Assessment**  
@@ -6,7 +5,17 @@
 
 ---
 
-## 🗂️ Project Structure
+##  Live Demo & Walkthrough
+
+| Component | URL |
+|-----------|-----|
+| **Live Demo (Streamlit)** | https://huggingface.co/spaces/rizwan0702/microzip-ai-assessment-rizwan |
+| **Loom Walkthrough** | https://www.loom.com/share/7ae698852aa9461094e227b609e5444b |
+| **GitHub Repo** | https://github.com/riswan0702/microzip-ai-assessment-rizwan |
+
+---
+
+## Project Structure
 
 ```
 microzip-ai-assessment-rizwan/
@@ -25,15 +34,7 @@ microzip-ai-assessment-rizwan/
 
 ---
 
-## Live Demo
-
-| Component | URL |
-|-----------|-----|
-| **RAG Agent (Streamlit)** | https://huggingface.co/spaces/rizwan0702/microzip-ai-assessment-rizwan |
-
----
-
-##  Local Setup
+## ⚙️ Local Setup
 
 ### 1. Clone the repo
 ```bash
@@ -55,9 +56,9 @@ Open → `http://localhost:8501`
 
 ---
 
-## 🤖 How to Use the RAG Agent
+## How to Use the RAG Agent
 
-1. Enter your **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** in the sidebar 
+1. Enter your **Groq API key** in the sidebar (free at [console.groq.com](https://console.groq.com))
 2. Upload any **PDF or TXT** document
 3. Click **Build Knowledge Base**
 4. Ask questions about the document
@@ -65,7 +66,7 @@ Open → `http://localhost:8501`
 
 ---
 
-##  Part 1 — ML Model
+## Part 1 — ML Model
 
 Open and run the notebook:
 ```bash
@@ -83,7 +84,7 @@ jupyter notebook part1_ml_model.ipynb
 
 ---
 
-## 🏗️ RAG Agent Architecture
+## RAG Agent Architecture
 
 ```
 User Question
