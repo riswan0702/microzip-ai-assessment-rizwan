@@ -96,10 +96,10 @@ Streamlit UI
 FAISS Vector Store  ◄── HuggingFace MiniLM Embeddings
       │
       ▼
-Top-K Relevant Chunks (retrieved from document)
+Top-K Relevant Chunks 
       │
       ▼
-Groq LLaMA 3.3 70B (free tier)
+Groq LLaMA 3.3 70B 
       │
       ▼
 Answer + Source Context + Conversation Memory
