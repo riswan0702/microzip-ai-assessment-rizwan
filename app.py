@@ -8,21 +8,21 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_groq import ChatGroq
 
-# ── Page Config ────────────────────────────────────────────────────────────
+# ── Page Config 
 st.set_page_config(
     page_title="MicroZip RAG Agent",
     page_icon="🤖",
     layout="wide"
 )
 
-# ── Constants ──────────────────────────────────────────────────────────────
+# ── Constants 
 EMBED_MODEL   = "sentence-transformers/all-MiniLM-L6-v2"
 GROQ_MODEL = "llama-3.3-70b-versatile"
 CHUNK_SIZE    = 800
 CHUNK_OVERLAP = 100
 TOP_K         = 4
 
-# ── Session State ──────────────────────────────────────────────────────────
+# ── Session State
 for key, default in {
     "chat_history": [],
     "qa_system": None,
@@ -33,7 +33,7 @@ for key, default in {
     if key not in st.session_state:
         st.session_state[key] = default
 
-# ── Load Embeddings ────────────────────────────────────────────────────────
+# ── Load Embeddings 
 @st.cache_resource
 def load_embeddings():
     return HuggingFaceEmbeddings(
@@ -42,7 +42,7 @@ def load_embeddings():
         encode_kwargs={"normalize_embeddings": True}
     )
 
-# ── Load Document ──────────────────────────────────────────────────────────
+# ── Load Document 
 def load_document(file):
     suffix = Path(file.name).suffix.lower()
     tmp_path = f"C:/tmp/uploaded_doc{suffix}"
@@ -61,7 +61,7 @@ def load_document(file):
 
     return loader.load()
 
-# ── Build Vector Store ─────────────────────────────────────────────────────
+# ── Build Vector Store 
 def build_vectorstore(documents, embeddings):
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=CHUNK_SIZE,
@@ -70,7 +70,7 @@ def build_vectorstore(documents, embeddings):
     chunks = splitter.split_documents(documents)
     return FAISS.from_documents(chunks, embeddings)
 
-# ── Build QA System ────────────────────────────────────────────────────────
+# ── Build QA System 
 def build_qa_system(vectorstore, groq_api_key):
 
     llm = ChatGroq(
@@ -88,7 +88,7 @@ def build_qa_system(vectorstore, groq_api_key):
         "retriever": retriever
     }
 
-# ── Sidebar ────────────────────────────────────────────────────────────────
+# ── Sidebar 
 with st.sidebar:
     st.title("RAG Setup")
 
@@ -115,7 +115,7 @@ with st.sidebar:
 
                     st.success("✅ Ready!")
 
-# ── Main UI ────────────────────────────────────────────────────────────────
+# ── Main UI 
 st.title("🤖 MicroZip RAG AI Agent")
 
 if not st.session_state.doc_loaded:
